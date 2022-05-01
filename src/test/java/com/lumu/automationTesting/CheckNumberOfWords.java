@@ -31,7 +31,7 @@ public class CheckNumberOfWords extends SetUpTest{
 		int countWordApp = Integer.parseInt(detailsResult.getText());
 
 		Assert.assertTrue(
-				"La cantidad de palabras esperada era: " + numberOfWordStringTest + " . Se obtuvo: " + countWordApp,
+				"The count of word expected was: " + numberOfWordStringTest + " . It was obtained: " + countWordApp,
 				numberOfWordStringTest == countWordApp);
 		
 		//Check count of word in title
@@ -44,7 +44,7 @@ public class CheckNumberOfWords extends SetUpTest{
 
 
 		Assert.assertTrue(
-				"La cantidad de palabras esperada era: " + numberOfWordStringTest + " . Se obtuvo: " + countWordInTitleApp,
+				"The count of word expected was: " + numberOfWordStringTest + " . It was obtained: " + countWordInTitleApp,
 				numberOfWordStringTest == countWordInTitleApp);
 		
 		//Check count of word in footer
@@ -57,7 +57,7 @@ public class CheckNumberOfWords extends SetUpTest{
 		int countWordInFooterApp = Integer.parseInt(footerResultTestArray[0]);
 
 		Assert.assertTrue(
-				"La cantidad de palabras esperada era: " + numberOfWordStringTest + " . Se obtuvo: " + countWordInFooterApp,
+				"The count of word expected was: " + numberOfWordStringTest + " . It was obtained: " + countWordInFooterApp,
 				numberOfWordStringTest == countWordInFooterApp);
 		
 	}

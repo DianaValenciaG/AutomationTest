@@ -44,7 +44,7 @@ public class KeywordDensity {
 	}
 	
 	public void printDensities() {
-		densitiesListSort.forEach((key, value) -> System.out.printf("%-20s%-20s\n" , key+" : "  , value));
+		densitiesListSort.forEach((word, count) -> System.out.printf("%-20s%-20s\n" , word+" : "  , count));
 	}
 	
 	public Map<String, Integer> getDensitiesListSort() {

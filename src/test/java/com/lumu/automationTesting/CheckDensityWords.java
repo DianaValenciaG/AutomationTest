@@ -31,19 +31,19 @@ public class CheckDensityWords extends SetUpTest {
 		Iterator<Map.Entry<String, Integer>> entries = keyWordDensityMap.entrySet().iterator();
 		int iteratorDensities = 0;
 
-		Assert.assertTrue("La cantidad de keywords es diferente. Cantidad Keywords esperado " + densitiesMapSize
+		Assert.assertTrue("The count of keywords is different. Count of Keywords expected: " + densitiesMapSize
 				+ " Keywords obtenido: " + keywordsAppSize, densitiesMapSize == keywordsAppSize);
 
 		while (entries.hasNext() && iteratorDensities < 3) {
 			Map.Entry<String, Integer> entry = entries.next();
 
-			Assert.assertTrue("No se encontro la llave: Palabra: "+ entry.getKey() + " Cantidad: " + entry.getValue().intValue(),
-					buscarPalabra(entry.getKey(), entry.getValue().intValue()));
+			Assert.assertTrue("Don't fount the key: Word ->  "+ entry.getKey() + " Count: " + entry.getValue().intValue(),
+					lookForWord(entry.getKey(), entry.getValue().intValue()));
 			iteratorDensities++;
 		}
 	}
 
-	public boolean buscarPalabra(String word, int count) {
+	public boolean lookForWord(String word, int count) {
 
 		int tamano = words.length; 
 

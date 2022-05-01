@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ReadFile {
 
 	public String readFile(){
-		String excepcionMessage = "Error en la lectura del archivo";
+		String excepcionMessage = "File reading error";
 		
 		File doc = new File(".\\src\\main\\resources\\inputText.txt");
 		Scanner scan;

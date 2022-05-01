@@ -27,7 +27,7 @@ public class CheckNumberOfCharacters extends SetUpTest {
 				.until(ExpectedConditions.elementToBeClickable(By.id("character_count")));
 
 		int countCharactersApp = Integer.parseInt(detailsResult.getText());
-		Assert.assertTrue("La cantidad de palabras esperada era: " + numberOfCharactersStringTest + " . Se obtuvo: "
+		Assert.assertTrue("The count of characters expected was: " + numberOfCharactersStringTest + " . It was obtained: "
 				+ countCharactersApp, numberOfCharactersStringTest == countCharactersApp);
 		
 		//check count characters in Title 
@@ -39,7 +39,7 @@ public class CheckNumberOfCharacters extends SetUpTest {
 		String[] titleResultTestArray = titleResultTest.split(" ");
 		int countCharactersInTitleApp = Integer.parseInt(titleResultTestArray[2]);
 
-		Assert.assertTrue("La cantidad de palabras esperada era: " + numberOfCharactersStringTest + " . Se obtuvo: "
+		Assert.assertTrue("The count of characters expected was: " + numberOfCharactersStringTest + " . It was obtained: "
 				+ countCharactersInTitleApp, numberOfCharactersStringTest == countCharactersInTitleApp);
 		
 		//check count characters in Footer
@@ -51,7 +51,7 @@ public class CheckNumberOfCharacters extends SetUpTest {
 		String[] footerResultArray = footerResultApp.split(" ");
 		int countCharacterInFootersApp = Integer.parseInt(footerResultArray[2]);
 
-		Assert.assertTrue("La cantidad de palabras esperada era: " + numberOfCharactersStringTest + " . Se obtuvo: "
+		Assert.assertTrue("The count of characters expected was: " + numberOfCharactersStringTest + " . It was obtained: "
 				+ countCharacterInFootersApp, numberOfCharactersStringTest == countCharacterInFootersApp);
 	}
 
