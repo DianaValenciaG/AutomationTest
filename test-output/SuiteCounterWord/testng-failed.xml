@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [SuiteCounterWord]">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.lumu.automationTesting.WordCounterTest">
+        <methods>
+          <include name="openWordCounterPage"/>
+          <include name="checkNumberOfWordsFooter"/>
+          <include name="checkNumberOfWordsTitle"/>
+          <include name="checkNumberOfWordsDetails"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.lumu.automationTesting.WordCounterTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [SuiteCounterWord] -->

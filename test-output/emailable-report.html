@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">13</td><td class="numi">9</td><td class="numi">0</td><td class="numi_attn">9</td><td class="numi">148,8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="4">com.lumu.automationTesting.CheckNumberOfWords</td><td><a href="#m1"><b>checkNumberOfWords</b>  </a></td><td class="numi">1</td><td>1651444758416</td><td class="numi">415</td></tr><tr class="failedodd"><td><a href="#m2"><b>checkNumberOfWords</b>  </a></td><td class="numi">1</td><td>1651444758416</td><td class="numi">415</td></tr><tr class="failedodd"><td><a href="#m3"><b>checkNumberOfWords</b>  </a></td><td class="numi">1</td><td>1651444758416</td><td class="numi">415</td></tr><tr class="failedodd"><td><a href="#m4"><b>checkNumberOfWords</b>  </a></td><td class="numi">1</td><td>1651444758416</td><td class="numi">415</td></tr>
+<tr class="failedeven"><td rowspan="5">com.lumu.automationTesting.CheckDensityWords</td><td><a href="#m5"><b>checkDensityWords</b>  </a></td><td class="numi">3</td><td>1651444813540</td><td class="numi">22913</td></tr><tr class="failedeven"><td><a href="#m6"><b>checkDensityWords</b>  </a></td><td class="numi">3</td><td>1651444813540</td><td class="numi">22913</td></tr><tr class="failedeven"><td><a href="#m7"><b>checkDensityWords</b>  </a></td><td class="numi">3</td><td>1651444813540</td><td class="numi">22913</td></tr><tr class="failedeven"><td><a href="#m8"><b>checkDensityWords</b>  </a></td><td class="numi">3</td><td>1651444813540</td><td class="numi">22913</td></tr><tr class="failedeven"><td><a href="#m9"><b>checkDensityWords</b>  </a></td><td class="numi">3</td><td>1651444813540</td><td class="numi">22913</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">com.lumu.automationTesting.CheckNumberOfWords</td><td><a href="#m10"><b>checkNumberOfWords</b>  </a></td><td class="numi">3</td><td>1651444768635</td><td class="numi">22438</td></tr><tr class="passedodd"><td><a href="#m11"><b>checkNumberOfWords</b>  </a></td><td class="numi">3</td><td>1651444768635</td><td class="numi">22438</td></tr><tr class="passedodd"><td><a href="#m12"><b>checkNumberOfWords</b>  </a></td><td class="numi">3</td><td>1651444768635</td><td class="numi">22438</td></tr><tr class="passedodd"><td><a href="#m13"><b>checkNumberOfWords</b>  </a></td><td class="numi">3</td><td>1651444768635</td><td class="numi">22438</td></tr>
+<tr class="passedeven"><td rowspan="5">com.lumu.automationTesting.CheckDensityWords</td><td><a href="#m14"><b>checkDensityWords</b>  </a></td><td class="numi">2</td><td>1651444802480</td><td class="numi">45327</td></tr><tr class="passedeven"><td><a href="#m15"><b>checkDensityWords</b>  </a></td><td class="numi">2</td><td>1651444802480</td><td class="numi">45327</td></tr><tr class="passedeven"><td><a href="#m16"><b>checkDensityWords</b>  </a></td><td class="numi">2</td><td>1651444802480</td><td class="numi">45327</td></tr><tr class="passedeven"><td><a href="#m17"><b>checkDensityWords</b>  </a></td><td class="numi">2</td><td>1651444802480</td><td class="numi">45327</td></tr><tr class="passedeven"><td><a href="#m18"><b>checkDensityWords</b>  </a></td><td class="numi">2</td><td>1651444802480</td><td class="numi">45327</td></tr>
+<tr class="passedodd"><td rowspan="4">com.lumu.automationTesting.CheckNumberOfCharacters</td><td><a href="#m19"><b>checkNumberOfCharacters</b>  </a></td><td class="numi">4</td><td>1651444864368</td><td class="numi">31449</td></tr><tr class="passedodd"><td><a href="#m20"><b>checkNumberOfCharacters</b>  </a></td><td class="numi">4</td><td>1651444864368</td><td class="numi">31449</td></tr><tr class="passedodd"><td><a href="#m21"><b>checkNumberOfCharacters</b>  </a></td><td class="numi">4</td><td>1651444864368</td><td class="numi">31449</td></tr><tr class="passedodd"><td><a href="#m22"><b>checkNumberOfCharacters</b>  </a></td><td class="numi">4</td><td>1651444864368</td><td class="numi">31449</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">com.lumu.automationTesting.CheckDensityWords:checkDensityWords</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>TEST TEST TO LUMU, LUMU COUNT WORDS WORDS AND WORDS</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>La cantidad de keywords es diferente. Cantidad Keywords esperado 6 Keywords obtenido: 4</p>
+junit.framework.Assert.fail(Assert.java:50)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at com.lumu.automationTesting.CheckDensityWords.checkDensityWords(CheckDensityWords.java:34)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.lumu.automationTesting.CheckDensityWords:checkDensityWords</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>LUMU LUMU LUMU lumu lumu illuminates illuminates attacks and adversaries lumu illuminates all attacks and adversaries</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>La cantidad de keywords es diferente. Cantidad Keywords esperado 6 Keywords obtenido: 5</p>
+junit.framework.Assert.fail(Assert.java:50)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at com.lumu.automationTesting.CheckDensityWords.checkDensityWords(CheckDensityWords.java:34)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.lumu.automationTesting.CheckDensityWords:checkDensityWords</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>DENSITY OF WORD, THE DENSITY IS IMPORTANT TO LUMU</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>La cantidad de keywords es diferente. Cantidad Keywords esperado 8 Keywords obtenido: 4</p>
+junit.framework.Assert.fail(Assert.java:50)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at com.lumu.automationTesting.CheckDensityWords.checkDensityWords(CheckDensityWords.java:34)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.lumu.automationTesting.CheckNumberOfWords:checkNumberOfWords</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Prueba Densidad de Palabras, cuando se tienen números 123 en la cadena, No los debe contar.</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>La cantidad de palabras esperada era: 15 . Se obtuvo: 16</p>
+junit.framework.Assert.fail(Assert.java:50)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at com.lumu.automationTesting.CheckNumberOfWords.checkNumberOfWords(CheckNumberOfWords.java:33)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.lumu.automationTesting.CheckNumberOfCharacters:checkNumberOfCharacters</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Prueba usando caracteres especiales, no deben contar como palabras , * - )</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.lumu.automationTesting.CheckDensityWords:checkDensityWords</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>AUTOMATION TEST LUMU, TEST AUTOMATION</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.lumu.automationTesting.CheckNumberOfWords:checkNumberOfWords</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>LUMU LUMU LUMU lumu lumu illuminates illuminates attacks and adversaries lumu illuminates all attacks and adversaries</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.lumu.automationTesting.CheckNumberOfCharacters:checkNumberOfCharacters</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Este String no tiene caracteres especiales ni números, así que no debería fallar</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.lumu.automationTesting.CheckNumberOfWords:checkNumberOfWords</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Prueba usando caracteres especiales, no deben contar como palabras , * - )</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.lumu.automationTesting.CheckNumberOfWords:checkNumberOfWords</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Este String no tiene caracteres especiales ni números, así que no debería fallar</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.lumu.automationTesting.CheckDensityWords:checkDensityWords</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>SIMPLE COUNT TEST. APP COUNT ARTICLES PREPOSITIONS?</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.lumu.automationTesting.CheckNumberOfCharacters:checkNumberOfCharacters</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Prueba Densidad de Palabras, cuando se tienen números 123 en la cadena, No los debe contar.</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.lumu.automationTesting.CheckNumberOfCharacters:checkNumberOfCharacters</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>LUMU LUMU LUMU lumu lumu illuminates illuminates attacks and adversaries lumu illuminates all attacks and adversaries</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
