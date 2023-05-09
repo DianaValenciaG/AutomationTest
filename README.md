@@ -1,4 +1,4 @@
-# Automation Test to Lumu 
+# Automation Test 
 
 ## Preconditions
 
